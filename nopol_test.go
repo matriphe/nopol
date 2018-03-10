@@ -23,6 +23,8 @@ var nopols = []Nopol{
 	{"AB 1234567890 CD", false, ""},
 	{"AB 1 WXYZ", false, ""},
 	{"AB CDEF GHI", false, ""},
+	{"", false, ""},
+	{"ab 123-xyz", true, "AB 123 XYZ"},
 }
 
 func TestIsValid(t *testing.T) {

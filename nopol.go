@@ -32,5 +32,5 @@ func Format(s string) (res string, err error) {
 	r, _ := setPattern()
 	res = r.ReplaceAllString(s, `$1 $3 $5`)
 
-	return strings.TrimSpace(res), nil
+	return strings.ToUpper(strings.TrimSpace(res)), nil
 }
