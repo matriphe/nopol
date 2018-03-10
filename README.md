@@ -1,5 +1,7 @@
 # Nopol
 
+[![Build Status](https://travis-ci.org/matriphe/nopol.svg?branch=master)](https://travis-ci.org/matriphe/nopol)
+
 Nopol is Go package to check and format Indonesian police number (vehicle's license plate number) of vehicles.
 
 It will format police number format like this `{XX} {DDDD} {YYY}`, for example `AB 1234 XYZ` or `RI 1`.
