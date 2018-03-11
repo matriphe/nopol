@@ -25,6 +25,9 @@ var nopols = []Nopol{
 	{"AB CDEF GHI", false, ""},
 	{"", false, ""},
 	{"ab 123-xyz", true, "AB 123 XYZ"},
+	{"nil", false, ""},
+	{"XY1234", true, "XY 1234"},
+	{"XYZ1234", false, ""},
 }
 
 func TestIsValid(t *testing.T) {
@@ -32,7 +35,7 @@ func TestIsValid(t *testing.T) {
 		r := IsValid(n.s)
 
 		if n.b != r {
-			t.Errorf("Police number %s is not valid, got %t, want %t", n.s, r, n.b)
+			t.Errorf("Vehicle registration number %s is not valid, got %t, want %t", n.s, r, n.b)
 		}
 	}
 }
